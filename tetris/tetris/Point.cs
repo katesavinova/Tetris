@@ -5,7 +5,7 @@ using System.Text;
 
 namespace tetris
 {
-    class Point
+    public class Point
     {
         public int x;
         public int y;
@@ -15,6 +15,13 @@ namespace tetris
         {
             Console.SetCursorPosition(x, y);
             Console.Write(c);
+        }
+        /*КОНСТРУКТОР*/
+        public Point(int a, int b, char var)
+        {
+            x = a;
+            y = b;
+            c = var;
         }
     }
 }
